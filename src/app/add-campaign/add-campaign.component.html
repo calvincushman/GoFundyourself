@@ -1,0 +1,27 @@
+<div>
+  <div>
+    <label>Campaign Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Campaign Description:</label>
+    <br>
+    <input #newDescription>
+  </div>
+
+  <div>
+    <label>Target Goal:</label>
+    <br>
+    <textarea #newTargetGoal></textarea>
+  </div>
+
+  <div>
+    <label>Rewards:</label>
+    <br>
+    <textarea #newRewards></textarea>
+  </div>
+
+  <button (click)="submitForm(newTitle.value, newDescription.value, newTargetGoal.value, newRewards.value); newTitle.value=''; newDescription.value=''; newTargetGoal.value=''; newRewards.value=''">Add</button>
+</div>
