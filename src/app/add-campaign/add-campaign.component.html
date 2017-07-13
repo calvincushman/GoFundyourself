@@ -1,27 +1,31 @@
-<div>
-  <div>
-    <label>Campaign Title:</label>
-    <br>
-    <input #newTitle>
-  </div>
+<div class="container">
+  <a routerLink=''>Back</a>
+  <div class="form">
+    <div>
+      <label>Campaign Title:</label>
+      <br>
+      <input #newTitle>
+    </div>
 
-  <div>
-    <label>Campaign Description:</label>
-    <br>
-    <input #newDescription>
-  </div>
+    <div>
+      <label>Campaign Description:</label>
+      <br>
+      <textarea #newDescription></textarea>
+    </div>
 
-  <div>
-    <label>Target Goal:</label>
-    <br>
-    <textarea #newTargetGoal></textarea>
-  </div>
+    <div>
+      <label>Target Goal:</label>
+      <br>
+      <input #newTargetGoal>
+    </div>
 
-  <div>
-    <label>Rewards:</label>
-    <br>
-    <textarea #newRewards></textarea>
-  </div>
+    <div>
+      <label>Rewards:</label>
+      <br>
+      <input #newRewards>
+    </div>
 
-  <button (click)="submitForm(newTitle.value, newDescription.value, newTargetGoal.value, newRewards.value); newTitle.value=''; newDescription.value=''; newTargetGoal.value=''; newRewards.value=''">Add</button>
+    <button (click)="submitForm(newTitle.value, newDescription.value, newTargetGoal.value, newRewards.value); newTitle.value=''; newDescription.value=''; newTargetGoal.value=''; newRewards.value=''">Add</button>
+
+  </div>
 </div>

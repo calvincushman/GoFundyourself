@@ -1,3 +1,8 @@
-<p>
-  campaigns works!
-</p>
+<div class="container">
+  <div class="current-campaigns">
+  <h2>Campaigns</h2>
+    <div class="current-campaign" *ngFor="let campaign of campaigns | async">
+      <h3 (click)="goToDetailPage(campaign)"><em>{{campaign.title}}</em> ${{campaign.target}} needed to reach goal</h3>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 20vh;
+  min-height: 200px;
+  width: 100%;
+  background-color: wheat;
+}
+
+textarea{
+  width: 400px;
+  height: 150px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 80px;
+  background-color: pink;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #efa1af;
+  margin: 15px;
+  padding: 5px;
+  transition-property: transform;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+.home-link:hover {
+  transform:  scale(1.05);
+}
+
+.container {
+  height: 80vh;
+  width: 100%;
+  background: wheat; browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, wheat, springgreen, darkgreen); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, wheat, springgreen, darkgreen); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, wheat, springgreen, darkgreen); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, wheat, springgreen, darkgreen); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.current-campaigns {
+  align-self: flex-start;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-campaign {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: tomato;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px
+}

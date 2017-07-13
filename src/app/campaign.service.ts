@@ -18,4 +18,8 @@ export class CampaignService {
     this.campaigns.push(newCampaign);
   }
 
+  getCampaignById(campaignId: string) {
+    return this.database.object('campaigns/' + campaignId);
+  }
+
 }
